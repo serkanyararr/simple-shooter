@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="SimpleShooter.Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:SimpleShooter="clr-namespace:SimpleShooter"
+    Width="500" Height="400">
+   <Grid x:Name="LayoutRoot">
+        <Canvas x:Name="gameRoot" Width="500" Height="400" Background="Black">
+            <SimpleShooter:RemainingLives x:Name="ctlLives" Canvas.Top="380" Canvas.Left="10" />
+            <SimpleShooter:Score x:Name="ctlScore" Canvas.Top="10" Canvas.Left="10" />
+            <SimpleShooter:WaveInfo x:Name="ctlWaveInfo" Canvas.Left="440" Canvas.Top="10" />
+            <SimpleShooter:Info x:Name="ctlInfo" Canvas.Top="10"/>
+        </Canvas>
+    </Grid>
+</UserControl>

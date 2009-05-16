@@ -1,0 +1,47 @@
+﻿<Canvas
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:vsm="clr-namespace:System.Windows;assembly=System.Windows" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Name="LayoutRoot1" Width="5" Height="5"
+	mc:Ignorable="d"
+	d:DesignWidth="10" d:DesignHeight="10" RenderTransformOrigin="0.5,0.5">
+    <Canvas.Resources>
+        <Storyboard x:Name="Storyboard1" AutoReverse="True" RepeatBehavior="Forever"/>
+    </Canvas.Resources>
+    <Canvas.RenderTransform>
+        <TransformGroup>
+            <ScaleTransform ScaleX="3" ScaleY="3"/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+        </TransformGroup>
+    </Canvas.RenderTransform>
+    <Grid x:Name="LayoutRoot" d:IsLocked="True"/>
+    <Grid x:Name="grid" Height="6" Canvas.Left="1" Canvas.Top="2" Width="4">
+    	<Path x:Name="rectangle_Copy" Data="M-1.1814263E-10,1.0113072 L1.1131552,0 L1.1079628,2.0875068 L-1.1814263E-10,1.0113072 z" Height="2.088" Stroke="{x:Null}" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" Margin="1.404,-0.208,1.483,0" VerticalAlignment="Top">
+    		<Path.RenderTransform>
+    			<CompositeTransform Rotation="-270.518" TranslateX="-0.048957572739651845" TranslateY="-0.03959787694568917"/>
+    		</Path.RenderTransform>
+    		<Path.Fill>
+    			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+    				<GradientStop Color="#FF2D2D2D"/>
+    				<GradientStop Color="#FFC6B9B9" Offset="0.466"/>
+    				<GradientStop Color="#FF2D2D2D" Offset="1"/>
+    			</LinearGradientBrush>
+    		</Path.Fill>
+    	</Path>
+    	<Path x:Name="rectangle" Data="M0,0 L2,0 L2,4 L0,4 z" Stretch="Fill" Stroke="{x:Null}" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" Margin="-0.229,2.432,-0.127,1.463">
+    		<Path.RenderTransform>
+    			<CompositeTransform Rotation="-90.202"/>
+    		</Path.RenderTransform>
+    		<Path.Fill>
+    			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+    				<GradientStop Color="#FF2D2D2D"/>
+    				<GradientStop Color="#FFC6B9B9" Offset="0.466"/>
+    				<GradientStop Color="#FF2D2D2D" Offset="1"/>
+    			</LinearGradientBrush>
+    		</Path.Fill>
+    	</Path>
+    </Grid>
+    </Canvas>

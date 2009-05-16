@@ -1,0 +1,8 @@
+﻿<UserControl x:Class="SimpleShooter.RemainingLives"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="200" Height="200">
+    <Grid x:Name="LayoutRoot">
+        <TextBlock x:Name="txtRemainingLives" Text="AA" Foreground="White" FontFamily="Wingdings 2" />
+    </Grid>
+</UserControl>
